@@ -8,11 +8,9 @@
 
 // BUG #20: o evento está escutando 'DOMContentLoaded' mas a função
 // usa getElementById com o ID errado ('form-contato' ao invés de 'formContato')
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {   
 
-  const form = document.getElementById('ano').textContent =
-`© ${new Date().getFullYear()} Patas Felizes. 
-        Pet Shop Todos os direitos reservados.`; // BUG: ID errado! No HTML é 'formContato'
+  const form = document.getElementById('formContato');// BUG: ID errado! No HTML é 'formContato'
 
   if (form) {
     form.addEventListener('submit', function (e) {
@@ -35,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+
+  const ano = document.getElementById('ano');
+  if (ano) {
+    ano.textContent = `© ${new Date().getFullYear()} Patas Felizes Pet Shop. Todos os direitos reservados.`;
+  }
   // =====================
   // HIGHLIGHT DO MENU ATIVO
   // =====================
