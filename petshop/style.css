@@ -79,8 +79,7 @@ textarea.input-error {
 @media (max-width: 768px) {
   nav ul {
     gap: 1rem;
+    flex-direction: column; /* ✅ ADICIONA ISSO */
+    align-items: center;    /* opcional (fica mais bonito) */
   }
-
-  /* BUG: no mobile o header não colapsa o menu em hamburguer,
-     os itens ficam todos espremidos - problema de responsividade */
 }
