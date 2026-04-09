@@ -10,7 +10,9 @@
 // usa getElementById com o ID errado ('form-contato' ao invés de 'formContato')
 document.addEventListener('DOMContentLoaded', function () {
 
-  const form = document.getElementById('form-contato'); // BUG: ID errado! No HTML é 'formContato'
+  const form = document.getElementById('ano').textContent =
+`© ${new Date().getFullYear()} Patas Felizes. 
+        Pet Shop Todos os direitos reservados.`; // BUG: ID errado! No HTML é 'formContato'
 
   if (form) {
     form.addEventListener('submit', function (e) {
