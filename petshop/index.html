@@ -46,38 +46,29 @@
     </header>
 
     <!-- ===================== HERO ===================== -->
-    <section class="bg-yellow-50 py-20 px-4">
-      <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12"
-      >
-        <div class="flex-1 text-center md:text-left">
-          <h1
-            class="text-5xl font-extrabold text-yellow-500 leading-tight mb-4"
-          >
-            Seu Cão Merece o Melhor!
-          </h1>
-          <p class="text-lg text-gray-500 mb-8 max-w-lg">
-            No Patas Felizes, cuidamos do seu amigo peludos com amor e
-            profissionalismo. Localizado no coração de Florianópolis, atendemos
-            cães, gatos e pequenos animais.
-          </p>
+    <section class="relative py-20 px-4 bg-cover bg-center"
+  style="background-image: url('imagens/hero-pet.jpg');">
 
-          <a
-            href="#contato"
-            class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-400 transition hover:shadow-lg transition duration-300"
-          >
-            Agende sua Visita já!
-          </a>
-        </div>
-        <div class="flex-1 flex justify-center">
-          <img
-            src="imagens/hero-pet.jpg"
-            alt=""
-            class="rounded-3xl shadow-xl w-full max-w-md"
-          />
-        </div>
-      </div>
-    </section>
+  <!-- CAMADA ESCURA (overlay) -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- CONTEÚDO -->
+  <div class="relative max-w-7xl mx-auto text-white text-center">
+    <h1 class="text-5xl font-extrabold mb-4">
+      Seu Pet Merece o Melhor!
+    </h1>
+
+    <p class="text-lg mb-8">
+      No Patas Felizes, cuidamos do seu amigo peludos com amor e profissionalismo. Localizado no coração de Florianópolis, atendemos cães, gatos e pequenos animais.
+    </p>
+
+    <a href="#contato"
+      class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full hover:bg-yellow-600 transition">
+      Agendar Agora
+    </a>
+  </div>
+
+</section>
 
     <!-- ===================== SOBRE ===================== -->
     <section id="sobre" class="py-20 px-4 bg-white">
