@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt BR">
   <!-- BUG #1: atributo lang incorreto, deveria ser "pt-BR" -->
 
   <head>
@@ -24,7 +24,7 @@
       >
         <div class="flex items-center gap-3">
           <img
-            src="imagens/logo-pet.jpg"
+            src="imagens/perfil.jpg"
             alt="Logo Patas Felizes"
             class="w-12 h-12 rounded-full"
           />
@@ -46,29 +46,31 @@
     </header>
 
     <!-- ===================== HERO ===================== -->
-    <section class="relative py-20 px-4 bg-cover bg-center"
-  style="background-image: url('imagens/hero-pet.jpg');">
+    <section
+      class="relative py-20 px-4 bg-cover bg-center"
+      style="background-image: url(&quot;imagens/hero-pet.jpg&quot;)"
+    >
+      <!-- CAMADA ESCURA (overlay) -->
+      <div class="absolute inset-0 bg-black/60"></div>
 
-  <!-- CAMADA ESCURA (overlay) -->
-  <div class="absolute inset-0 bg-black/60"></div>
+      <!-- CONTEÚDO -->
+      <div class="relative max-w-7xl mx-auto text-white text-center">
+        <h1 class="text-5xl font-extrabold mb-4">Seu Pet Merece o Melhor!</h1>
 
-  <!-- CONTEÚDO -->
-  <div class="relative max-w-7xl mx-auto text-white text-center">
-    <h1 class="text-5xl font-extrabold mb-4">
-      Seu Pet Merece o Melhor!
-    </h1>
+        <p class="text-lg mb-8">
+          No Patas Felizes, cuidamos do seu amigo peludos com amor e
+          profissionalismo. Localizado no coração de Florianópolis, atendemos
+          cães, gatos e pequenos animais.
+        </p>
 
-    <p class="text-lg mb-8">
-      No Patas Felizes, cuidamos do seu amigo peludos com amor e profissionalismo. Localizado no coração de Florianópolis, atendemos cães, gatos e pequenos animais.
-    </p>
-
-    <a href="#contato"
-      class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full hover:bg-yellow-600 transition">
-      Agendar Agora
-    </a>
-  </div>
-
-</section>
+        <a
+          href="#contato"
+          class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full hover:bg-yellow-600 hover:scale-105 transition duration-300"
+        >
+          Agendar Agora
+        </a>
+      </div>
+    </section>
 
     <!-- ===================== SOBRE ===================== -->
     <section id="sobre" class="py-20 px-4 bg-white">
@@ -183,7 +185,7 @@
               alt="Foto de Ana Lima"
               class="w-14 h-14 rounded-full mb-4 object-cover"
             />
-            <p class="text-gray-300 italic mb-4">
+            <p class="text-gray-800 italic mb-4">
               "Melhor pet shop da cidade! Minha cachorra adora vir aqui."
             </p>
             <span class="font-bold text-yellow-600">Ana castela</span>
@@ -195,7 +197,7 @@
               alt="Foto de Carlos Souza"
               class="w-14 h-14 rounded-full mb-4 object-cover"
             />
-            <p class="text-gray-300 italic mb-4">
+            <p class="text-gray-800 italic mb-4">
               "Atendimento incrível. O gato ficou lindo após a tosa!"
             </p>
             <span class="font-bold text-yellow-600"> virginia Fonseca </span>
@@ -207,7 +209,7 @@
               alt="Foto de Júlia Martins"
               class="w-14 h-14 rounded-full mb-4 object-cover"
             />
-            <p class="text-gray-300 italic mb-4">
+            <p class="text-gray-800 italic mb-4">
               "O hotel para pets é excelente. Viajei tranquila sabendo que meu
               bichinho estava bem cuidado."
             </p>
@@ -290,31 +292,37 @@
             <!-- Botão -->
             <button
               type="submit"
-              class="bg-yellow-500 text-white px-6 py-2 rounded-lg w-full"
+              class="bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg w-full hover:bg-yellow-600 hover:scale-105 transition duration-300 shadow-lg"
             >
               Agendar
             </button>
           </form>
         </div>
 
-        <div
-          class="mt-10 flex flex-col md:flex-row justify-center gap-8 text-white"
-        >
-          <div>
-            <p class="font-bold text-lg">📍 Endereço</p>
-            <p>
-              Rua das Flores, 245 – Centro, Florianópolis/SC – CEP 88000-000
-            </p>
-          </div>
-          <div>
-            <p class="font-bold text-lg">📱 Telefone</p>
-            <p>(48) 3232-4545</p>
-          </div>
-          <div>
-            <p class="font-bold text-lg">✉️ E-mail</p>
-            <p>contato@patasfelizes.com.br</p>
-          </div>
-        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-800">
+
+  <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition">
+    <p class="text-2xl mb-2">📍</p>
+    <p class="font-bold text-lg mb-1">Endereço</p>
+    <p class="text-sm">
+      Rua das Flores, 245<br>
+      Centro, Florianópolis/SC
+    </p>
+  </div>
+
+  <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition">
+    <p class="text-2xl mb-2">📱</p>
+    <p class="font-bold text-lg mb-1">Telefone</p>
+    <p class="text-sm">(48) 3232-4545</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition">
+    <p class="text-2xl mb-2">✉️</p>
+    <p class="font-bold text-lg mb-1">E-mail</p>
+    <p class="text-sm">contato@patasfelizes.com.br</p>
+  </div>
+
+</div>
       </div>
     </section>
 
